@@ -4,9 +4,7 @@ function dibujarT(i) {
     $('#barra' + i).animate({
       width: (presupuesto[i].valor / calcularT()) * 500
     }, 400);
-
   }
-
 }
 
 function calcularT() {
@@ -20,22 +18,22 @@ function calcularT() {
 
 // variables
 var presupuesto = [{
-  'nombre': 'educacion',
+  'nombre': 'Educacion',
   'valor': 4.5
 }, {
-  'nombre': 'salud',
+  'nombre': 'Salud',
   'valor': 2.9
 }, {
-  'nombre': 'defensa',
+  'nombre': 'Defensa',
   'valor': 0.6
 }, {
-  'nombre': 'seguridad pública',
+  'nombre': 'Seguridad Pública',
   'valor': 1.4
 }, {
-  'nombre': 'infraestructura',
+  'nombre': 'Infraestructura',
   'valor': 0.7
 }, {
-  'nombre': 'seguridad social',
+  'nombre': 'Seguridad social',
   'valor': 6.2
 }, ];
 
