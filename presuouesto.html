@@ -1,0 +1,32 @@
+---
+layout: default
+title: ¿A dónde van mis impuestos?
+---
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../build/0.5.0/openspending.min.css">
+    <title>Bubbletree Visualization Demo</title>
+  </head>
+  <body>
+    <div id="bubbletree"></div>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/js/openspending.min.js"></script>
+
+    <script 'text/javascript'>
+      var data = {
+      currency: "GBP",
+      aggregated_csv_url: "./by-cofog1-then-cofog2.csv",
+      amount_col_name: "amount",
+      };
+
+      var options = {
+      data: data
+      };
+
+      $('#bubbletree').bubbletree(options);
+    </script>
+  </body>
+</html>
