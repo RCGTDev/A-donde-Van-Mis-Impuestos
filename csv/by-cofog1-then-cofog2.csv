@@ -1,20 +1,20 @@
 cofog_level1_code,cofog_level2_code,amount,cofog_level2_name,cofog_level1_name
 "01","01.1",232151758,Presidencia,Servicios públicos generales
 "01","01.1",402301000,Relaciones Exteriores,Servicios públicos generales
-1,1.3,1385618086,Secretarias y otras dependencias del Ejecutivo,Servicios públicos generales
-1,1.8,25188618584,Obligaciones del Estado a Cargo del Tesoro,Servicios públicos generales
-1,1.7,9308065412,Deuda Publica,Servicios públicos generales
-1,1.2,65000000,Procuraduría General de la Nación,Servicios públicos generales
-2,2.1,2100253199,Defensa Nacional,Defensa
-3,3.6,4526514967,Gobernación,Orden público y seguridad
-4,4.1,332986894,Finanzas Publicas,Asuntos económicos
-4,4.2,276488000,Economía,Asuntos económicos
-4,4.3,1414000000,Agricultura Ganadería y Alimentación,Asuntos económicos
-4,4.4,89956000,Energía y Minas,Asuntos económicos
-5,5.1,176265000,Ambiente y Recursos Naturales,Protección del medio ambiente
-6,6.1,4889966623,Comunicaciones Infraestructura y Vivienda,Vivienda y servicios comunitarios
-7,7.1,5647224460,Salud Publica y Asistencia Social,Salud
-8,8.1,423735168,Cultura y Deportes,"Actividades recreativas, cultura y religión"
-9,9.1,12295590749,Educación,Educación
-10,10.1,634264100,Trabajo y Previsión Social,Protección social
-10,10.2,1211000000,Desarrollo Social,Protección social
+"01","01.3",1385618086,Secretarias y otras dependencias del Ejecutivo,Servicios públicos generales
+"01","01.8",25188618584,Obligaciones del Estado a Cargo del Tesoro,Servicios públicos generales
+"01","01.7",9308065412,Deuda Publica,Servicios públicos generales
+"01","01.2",65000000,Procuraduría General de la Nación,Servicios públicos generales
+"02","02.1",2100253199,Defensa Nacional,Defensa
+"03","03.6",4526514967,Gobernación,Orden público y seguridad
+"04","04.1",332986894,Finanzas Publicas,Asuntos económicos
+"04","04.2",276488000,Economía,Asuntos económicos
+"04","04.3",1414000000,Agricultura Ganadería y Alimentación,Asuntos económicos
+"04","04.4",89956000,Energía y Minas,Asuntos económicos
+"05","05.1",176265000,Ambiente y Recursos Naturales,Protección del medio ambiente
+"06","06.1",4889966623,Comunicaciones Infraestructura y Vivienda,Vivienda y servicios comunitarios
+"07","07.1",5647224460,Salud Publica y Asistencia Social,Salud
+"08","08.1",423735168,Cultura y Deportes,"Actividades recreativas, cultura y religión"
+"09","09.1",12295590749,Educación,Educación
+"010","010.1",634264100,Trabajo y Previsión Social,Protección social
+"010","010.2",1211000000,Desarrollo Social,Protección social
