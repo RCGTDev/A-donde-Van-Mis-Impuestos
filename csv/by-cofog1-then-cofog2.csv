@@ -1,20 +1,20 @@
-cofog_level1_code,cofog_level1_name,cofog_level2_code,cofog_level2_name,amount
-01,Servicios públicos generales,1.1,Presidencia,232151758
-01,Servicios públicos generales,1.1,Relaciones Exteriores,402301000
-01,Servicios públicos generales,1.3,Secretarias y otras dependencias del Ejecutivo,1385618086
-01,Servicios públicos generales,1.8,Obligaciones del Estado a Cargo del Tesoro,25188618584
-01,Servicios públicos generales,1.7,Deuda Publica,9308065412
-01,Servicios públicos generales,1.2,Procuraduría General de la Nación,65000000
-02,Defensa,2.1,Defensa Nacional,2100253199
-03,Orden público y seguridad,3.6,Gobernación,4526514967
-04,Asuntos económicos,4.1,Finanzas Publicas,332986894
-04,Asuntos económicos,4.2,Economía,276488000
-04,Asuntos económicos,4.3,Agricultura Ganadería y Alimentación,1414000000
-04,Asuntos económicos,4.4,Energía y Minas,89956000
-05,Protección del medio ambiente,5.1,Ambiente y Recursos Naturales,176265000
-06,Vivienda y servicios comunitarios,6.1,Comunicaciones Infraestructura y Vivienda,4889966623
-07,Salud,7.1,Salud Publica y Asistencia Social,5647224460
-08,"Actividades recreativas, cultura y religión",8.1,Cultura y Deportes,423735168
-09,Educación,9.1,Educación,12295590749
-10,Protección social,10.1,Trabajo y Previsión Social,634264100
-10,Protección social,10.2,Desarrollo Social,1211000000
+cofog_level1_code,cofog_level2_code,amount,cofog_level2_name,cofog_level1_name
+"01","01.1",232151758,Presidencia,Servicios públicos generales
+"01","01.1",402301000,Relaciones Exteriores,Servicios públicos generales
+1,1.3,1385618086,Secretarias y otras dependencias del Ejecutivo,Servicios públicos generales
+1,1.8,25188618584,Obligaciones del Estado a Cargo del Tesoro,Servicios públicos generales
+1,1.7,9308065412,Deuda Publica,Servicios públicos generales
+1,1.2,65000000,Procuraduría General de la Nación,Servicios públicos generales
+2,2.1,2100253199,Defensa Nacional,Defensa
+3,3.6,4526514967,Gobernación,Orden público y seguridad
+4,4.1,332986894,Finanzas Publicas,Asuntos económicos
+4,4.2,276488000,Economía,Asuntos económicos
+4,4.3,1414000000,Agricultura Ganadería y Alimentación,Asuntos económicos
+4,4.4,89956000,Energía y Minas,Asuntos económicos
+5,5.1,176265000,Ambiente y Recursos Naturales,Protección del medio ambiente
+6,6.1,4889966623,Comunicaciones Infraestructura y Vivienda,Vivienda y servicios comunitarios
+7,7.1,5647224460,Salud Publica y Asistencia Social,Salud
+8,8.1,423735168,Cultura y Deportes,"Actividades recreativas, cultura y religión"
+9,9.1,12295590749,Educación,Educación
+10,10.1,634264100,Trabajo y Previsión Social,Protección social
+10,10.2,1211000000,Desarrollo Social,Protección social
