@@ -1,20 +1,20 @@
 cofog_level1_code,cofog_level1_name,cofog_level2_code,cofog_level2_name,amount
-1,Servicios públicos generales,1.1,Presidencia,232151758
-1,Servicios públicos generales,1.1,Relaciones Exteriores,402301000
-1,Servicios públicos generales,1.3,Secretarias y otras dependencias del Ejecutivo,1385618086
-1,Servicios públicos generales,1.8,Obligaciones del Estado a Cargo del Tesoro,25188618584
-1,Servicios públicos generales,1.7,Deuda Publica,9308065412
-1,Servicios públicos generales,1.2,Procuraduría General de la Nación,65000000
-2,Defensa,2.1,Defensa Nacional,2100253199
-3,Orden público y seguridad,3.6,Gobernación,4526514967
-4,Asuntos económicos,4.1,Finanzas Publicas,332986894
-4,Asuntos económicos,4.2,Economía,276488000
-4,Asuntos económicos,4.3,Agricultura Ganadería y Alimentación,1414000000
-4,Asuntos económicos,4.4,Energía y Minas,89956000
-5,Protección del medio ambiente,5.1,Ambiente y Recursos Naturales,176265000
-6,Vivienda y servicios comunitarios,6.1,Comunicaciones Infraestructura y Vivienda,4889966623
-7,Salud,7.1,Salud Publica y Asistencia Social,5647224460
-8,"Actividades recreativas, cultura y religión",8.1,Cultura y Deportes,423735168
-9,Educación,9.1,Educación,12295590749
+01,Servicios públicos generales,1.1,Presidencia,232151758
+01,Servicios públicos generales,1.1,Relaciones Exteriores,402301000
+01,Servicios públicos generales,1.3,Secretarias y otras dependencias del Ejecutivo,1385618086
+01,Servicios públicos generales,1.8,Obligaciones del Estado a Cargo del Tesoro,25188618584
+01,Servicios públicos generales,1.7,Deuda Publica,9308065412
+01,Servicios públicos generales,1.2,Procuraduría General de la Nación,65000000
+02,Defensa,2.1,Defensa Nacional,2100253199
+03,Orden público y seguridad,3.6,Gobernación,4526514967
+04,Asuntos económicos,4.1,Finanzas Publicas,332986894
+04,Asuntos económicos,4.2,Economía,276488000
+04,Asuntos económicos,4.3,Agricultura Ganadería y Alimentación,1414000000
+04,Asuntos económicos,4.4,Energía y Minas,89956000
+05,Protección del medio ambiente,5.1,Ambiente y Recursos Naturales,176265000
+06,Vivienda y servicios comunitarios,6.1,Comunicaciones Infraestructura y Vivienda,4889966623
+07,Salud,7.1,Salud Publica y Asistencia Social,5647224460
+08,"Actividades recreativas, cultura y religión",8.1,Cultura y Deportes,423735168
+09,Educación,9.1,Educación,12295590749
 10,Protección social,10.1,Trabajo y Previsión Social,634264100
 10,Protección social,10.2,Desarrollo Social,1211000000
