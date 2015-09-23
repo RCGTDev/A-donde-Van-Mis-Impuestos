@@ -18,6 +18,9 @@ title: ¿A dónde van mis impuestos?
     .openspending-bt .label {
         font-weight: normal;
         font-size: 100%;
+        white-space: normal;
+        padding: 0;
+        line-height: 25px;
     }
 </style>
 
@@ -28,10 +31,11 @@ title: ¿A dónde van mis impuestos?
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="/js/openspending.js"></script>
+
 <script 'text/javascript'>
 
     var data = {
-        currency: "GTO",
+        currency: "GTQ",
         aggregated_csv_url: "csv/by-cofog1-then-cofog2.csv",
         amount_col_name: "amount"
     };
