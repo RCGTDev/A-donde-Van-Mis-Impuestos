@@ -36,6 +36,7 @@ OpenSpending.DailyBread = function (elem, opts) {
   this.tiers = []
   this.areas = []
   this.iconLookup = function (name) { return undefined; };
+  this.labelLookup = function (name) { return undefined; };
 
   this.init = function () {
     this.setSalary(self.opts.defaultsalary || 22000); // default starting salary
@@ -108,7 +109,8 @@ OpenSpending.DailyBread = function (elem, opts) {
         function(child) {
           var daily = (child.amount / node.amount);
           if (absolute) daily = daily / 365.0;
-          return [child.name, child.label, daily, handleChildren(child, false)];
+          // return [child.name, child.label, daily, handleChildren(child, false)];
+          return [child.name, 'label', daily, handleChildren(child, false)];
         });
     }
     self.setData(handleChildren(data, true));
@@ -116,6 +118,10 @@ OpenSpending.DailyBread = function (elem, opts) {
 
   this.setIconLookup = function(lookup) {
     self.iconLookup = lookup;
+  }
+
+  this.setLabelLookup = function(lookup) {
+    self.labelLookup = lookup;
   }
 
   this.setSalary = function (salary) {
@@ -172,6 +178,7 @@ OpenSpending.DailyBread = function (elem, opts) {
     var w = 100.0 / n
 
     var icons = _.map(data, function(d) { return self.iconLookup(d[0]); });
+    var areasLabels = _.map(data, function(d) { return self.labelLookup(d[0]); });
 
     if (!sliderUpdate) {
       var tpl = "<div class='db-area-row'>" +
@@ -190,7 +197,7 @@ OpenSpending.DailyBread = function (elem, opts) {
                 "<% }); %>" +
                 "</div>"
 
-      t.html(_.template(tpl, { activeArea: self.areas[tierId], areas: data, width: w, icons: icons }))
+      t.html(_.template(tpl, { activeArea: self.areas[tierId], areas: areasLabels, width: w, icons: icons }))
 
       self.drawIcons(t);
     }
@@ -205,21 +212,21 @@ OpenSpending.DailyBread = function (elem, opts) {
   }
 
   this.taxAndDataForTier = function (tierId) {
+
     var data = self.data
     var tax = self.taxVal
-    var areaId
+    var areaId;
 
     for (var i = 0, tot = tierId; i < tierId; i += 1) {
       areaId = self.areas[i]
       if (data[areaId]) {
         tax = tax * data[areaId][2];
         data = data[areaId][3];
-
-        console.log(data[areaId]);
       } else {
         return null
       }
     }
+
     return [tax, data]
   }
 

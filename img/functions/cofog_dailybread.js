@@ -19,7 +19,11 @@ OpenSpending.Styles.Cofog = {
 	'01.3.1': { icon: 'img/functions/human-resources.svg' },
 	'01.3.2': { icon: 'img/functions/planning.svg' },
 	'01.3.3': { icon: 'img/functions/research.svg' },
+	'01.4': { icon: 'img/functions/research.svg' },
+
+	'01.8': { icon: 'img/functions/economic-aid.svg' },
 	'01.7': { icon: 'img/functions/public-debt.svg' },
+	'01.8': { icon: 'img/functions/economic-aid.svg' },
 	
 	'02': { icon: 'img/functions/defence.svg', color: '#0AB971' },
 	'02.1': { icon: 'img/functions/military.svg' },
@@ -92,14 +96,14 @@ OpenSpending.Styles.Cofog = {
 	'08.2': { icon: 'img/functions/culture.svg' },					
 	'08.1': { icon: 'img/functions/sports.svg' },	
 	'08.3': { icon: 'img/functions/media.svg' },	
-	'09': { icon: 'img/functions/education.svg' },				
+
+	'09': { icon: 'img/functions/education.svg' },
+	'09.1': { icon: 'img/functions/secondary-lower.svg' },
 	
-	'10': { icon: 'img/functions/helping-others.svg', color: '#935B3B' },
-	'10.1': { icon: 'img/functions/helping-others.svg' },
-	'10.1.2': { icon: 'img/functions/helping-others.svg' },
-	'10.2': { icon: 'img/functions/old-age.svg' },
-	'10.4': { icon: 'img/functions/family.svg' },
-	'10.7': { icon: 'img/functions/family2.svg' }
-
+	'010': { icon: 'img/functions/helping-others.svg', color: '#935B3B' },
+	'010.1': { icon: 'img/functions/helping-others.svg' },
+	'010.1.2': { icon: 'img/functions/helping-others.svg' },
+	'010.2': { icon: 'img/functions/old-age.svg' },
+	'010.4': { icon: 'img/functions/family.svg' },
+	'010.7': { icon: 'img/functions/family2.svg' }
 };
-
