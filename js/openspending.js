@@ -19037,6 +19037,9 @@ var BubbleTree = function(config, onHover, onUnHover) {
 		    node['color'] = styles.colors.getColor(node.name||node.id); 
 		    node['icon'] = styles.icons.svg.getIcon(node.name||node.id,
 							    styles.icons.path);
+            if (styles.labels && styles.labels[node.name]) {
+                node['shortLabel'] = styles.labels[node.name];
+            }
 		}
 
 		if (!node.color) {
@@ -23073,7 +23076,7 @@ OpenSpending.Taxman.defaults = {
         // Get the configuration
         var config = $.extend(true, {}, $.bubbletree.defaults,
                               $.bubbletree.domopts(element), options);
-       
+
 	// The state of is stored in this context
 	var state = {
 	    aggregated_csv_url: config.data.aggregated_csv_url,
