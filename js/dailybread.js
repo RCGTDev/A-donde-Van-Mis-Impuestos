@@ -40,10 +40,13 @@ OpenSpending.DailyBread = function (elem, opts) {
 
   this.init = function () {
     this.setSalary(self.opts.defaultsalary || 22000); // default starting salary
+    this.setTax(self.opts.defaultsalary || 22000); // default starting salary
 
     this.$e.find('.wdmmg-slider').slider({
-      value: this.salaryVal,
-      min: self.opts.minimumsalary || 10000,
+      value: this.taxVal,
+      // In order tu support a 0 minimumsalari, the comparison must be done against
+      // undefined
+      min: undefined != self.opts.minimumsalary ? self.opts.minimumsalary : 10000,
       max: self.opts.maximumsalary || 200000,
       step: self.opts.salarystep || 10,
       animate: true,
@@ -56,11 +59,13 @@ OpenSpending.DailyBread = function (elem, opts) {
 
   this.sliderSlide = function (evt, sld) {
     self.setSalary(sld.value);
+    self.setTax(sld.value);
     self.drawTotals();
   }
 
   this.sliderChange = function (evt, sld) {
     self.setSalary(sld.value);
+    self.setTax(sld.value);
     self.draw(true);
   }
 
@@ -113,7 +118,8 @@ OpenSpending.DailyBread = function (elem, opts) {
           return [child.name, 'label', daily, handleChildren(child, false)];
         });
     }
-    self.setData(handleChildren(data, true));
+
+    self.setData(handleChildren(data, false));
   }
 
   this.setIconLookup = function(lookup) {
@@ -128,18 +134,24 @@ OpenSpending.DailyBread = function (elem, opts) {
     self.salaryVal = salary;
   }
 
+  this.setTax = function (tax) {
+    self.taxVal = tax;
+  }
+
   this.getTaxVal = function () {
-      var rq = $.getJSON(TAXMAN_URL + '/'+(self.opts.country || 'gb')+'?callback=?', $.extend({
-      year: 2010,
-      indirects: true,
-      income: self.salaryVal
-      }, self.opts.taxman));
+    return self.taxVal;
 
-    rq.then(function (data) {
-      self.taxVal = data.calculation.total;
-    })
+    // var rq = $.getJSON(TAXMAN_URL + '/'+(self.opts.country || 'gb')+'?callback=?', $.extend({
+    //   year: 2010,
+    //   indirects: true,
+    //   income: self.salaryVal
+    //   }, self.opts.taxman));
 
-    return rq;
+    // rq.then(function (data) {
+    //   self.taxVal = data.calculation.total;
+    // })
+
+    // return rq;
   }
 
   this.draw = function (sliderUpdate) {
@@ -157,7 +169,8 @@ OpenSpending.DailyBread = function (elem, opts) {
     var taxUndef = (typeof self.taxVal === 'undefined' || self.taxVal == null);
 
     if (sliderUpdate || taxUndef) {
-      self.getTaxVal().then(_draw);
+      _draw();
+      // self.getTaxVal().then(_draw);
     } else {
       _draw();
     }
@@ -204,9 +217,9 @@ OpenSpending.DailyBread = function (elem, opts) {
 
     // Update values
     var valEls = t.find('.db-area-value')
-    _.each(data, function (area, idx) {
-    valEls.eq(idx).text(formatCurrency(tax * area[2], 2, self.opts.symbol))
-    })
+      _.each(data, function (area, idx) {
+        valEls.eq(idx).text(formatCurrency(tax * area[2], 2, self.opts.symbol))
+      })
 
     t.show()
   }

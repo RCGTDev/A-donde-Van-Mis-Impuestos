@@ -21,7 +21,7 @@ title: ¿A dónde van mis impuestos?
                     <p>Q5,000</p>
                 </div> -->
                 <div id="db-slider" class="layout-col layout-col-2">
-                    <h2>¿Cuanto pagas de impuestos al año?</h2>
+                    <h2>¿Cuanto pagas de impuestos al mes?</h2>
                     <div class="wdmmg-slider"></div>
                 </div>
                 <div id="db-tax" class="layout-col layout-col-3">
@@ -93,14 +93,10 @@ title: ¿A dónde van mis impuestos?
         });
 
         db.setLabelLookup(function (name) {
-            console.log('looking for: ' + name);
             if (labels[name] != undefined) {
-                console.log( 'returning: ' + labels[name]);
-
                 return [false, labels[name]];
             }
 
-            console.log('returning default name');
             return [false, name];
         })
 
@@ -113,7 +109,10 @@ title: ¿A dónde van mis impuestos?
         var db = new OpenSpending.DailyBread(
             $('#dailybread'),
             {
-                symbol: 'Q'
+                symbol: 'Q',
+                minimumsalary: 0,
+                maximumsalary: 30000,
+                defaultsalary: 100
             }
         );
 
