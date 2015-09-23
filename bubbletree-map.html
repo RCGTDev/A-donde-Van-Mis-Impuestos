@@ -4,7 +4,6 @@ title: ¿A dónde van mis impuestos?
 ---
 
 <link rel="stylesheet" href="/css/openspending.min.css">
-<br><br>
 
 <style>
     .openspending-bt .label2 span {
@@ -22,11 +21,15 @@ title: ¿A dónde van mis impuestos?
         padding: 0;
         line-height: 25px;
     }
+
+    h3.page-header {
+        margin-bottom: 5px;
+    }
 </style>
 
 <h3 class="page-header">Conoce tu <b>Presupuesto</b> para el año 2015</h3>
 
-<div id="bubbletree"></div>
+<div id="bubbletree" style="width: 650px; height: 650px;"></div>
 
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -73,7 +76,8 @@ title: ¿A dónde van mis impuestos?
                 "09.1": "Educación",
                 "010.1": "Trabajo y Previsión Social",
                 "010.1": "Desarrollo Social"
-            }
+            },
+            bubbletype: ['plain', 'icon']
         }
     };
 
