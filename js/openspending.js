@@ -23101,7 +23101,7 @@ OpenSpending.Taxman.defaults = {
 		    delay: 800,
 		    content: function(node) {
 			var formattedAmount = OpenSpending.Amounts.format(node.amount,0,node.currency);
-			return [node.label, (node.description ? '<div class="desc">'+ node.description + '</div>' : '') + '<div class="amount">'+formattedAmount+'</div>'];
+			return [node.shortLabel, (node.description ? '<div class="desc">'+ node.description + '</div>' : '') + '<div class="amount">'+formattedAmount+'</div>'];
 		    }
 		}
 	    });
